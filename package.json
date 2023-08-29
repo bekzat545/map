@@ -15,7 +15,7 @@
     "clean:test": "jest --clearCache",
     "deploy": "gatsby-plugin-s3 deploy -y",
     "dev": "gatsby develop --host=0.0.0.0",
-    "prepare-env": "./prepare-env.js",
+    "prepare-env": "node ./prepare-env.js",
     "test": "npm run clean:test && jest src/** --coverage"
   },
   "engines": {
