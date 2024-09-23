@@ -7,7 +7,6 @@ import { Provider } from 'react-redux';
 import { createStore } from './ssr-store';
 
 const store = createStore();
-
-export default ( { element } ) => {
+export default ({ element }) => {
   return <Provider store={store}>{element}</Provider>;
 };

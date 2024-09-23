@@ -9,6 +9,6 @@ const store = createStore();
 
 export default ({ element }) => {
   return (
-      <Provider store={store}>{element}</Provider>
+    <Provider store={store}>{element}</Provider>
   );
 };
