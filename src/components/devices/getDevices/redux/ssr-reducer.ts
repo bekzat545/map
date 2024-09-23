@@ -12,8 +12,8 @@ export const initialGetDevicesState: GetDevicesState = {
   error: null,
 };
 
-export default function loginReducer(state = initialGetDevicesState, action: GetDevicesRequest) {
-  switch (action.type) {
+export default function loginReducer( state = initialGetDevicesState, action: GetDevicesRequest ) {
+  switch ( action.type ) {
 
     default:
       return state;
