@@ -7,7 +7,7 @@ import { createStore } from './store';
 
 const store = createStore();
 
-export default ({ element }) => {
+export default ( { element } ) => {
   return (
     <Provider store={store}>{element}</Provider>
   );
