@@ -1,0 +1,14 @@
+.video {
+    max-width: 1440px;
+    
+    mask-image: url(../img/Kyrgyzstan.png); 
+    mask-repeat: no-repeat;
+    mask-size: 100%
+}
+
+@media (max-width: 600px) {
+    .video{
+        max-width: 370px;
+    }
+    
+}

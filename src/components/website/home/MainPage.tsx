@@ -1,19 +1,19 @@
-/* External dependencies */
 import React from 'react';
-
-/* Local dependencies */
-import AboutUs from '../aboutUs/AboutUs';
-import './MainPage.scss'
+import './MainPage.scss';
 import Header from '../header/Header';
-import Navbar from '../Navbar/Navbar';
+import Main from '../Main/Main';
+import TextPhone from '../TextPhone/TextPhone';
+import Features from '../features/Features';
+import Footer from '../footer/Footer';
 
 export default function MainPage() {
   return (
     <>
-      <AboutUs />
-      <Header/>
-      <Navbar/>
+      <Header />
+      <Main />
+      <TextPhone/>
+      <Features/> 
+      <Footer/> 
     </>
   );
 }
-

@@ -1,29 +1,15 @@
 import React from 'react'
+import {Div, Image}  from 'atomize'
 import './Header.scss'
-import Logo from '../img/logo.png';
-import MapKG from '../img/Kyrgyzstan.png'
-import Video from '../img/Video.mp4'
+import Logo from '../img/Logo.svg';
 
 export default function Header() {
   return (
-    <body>
-      <header>
-        <div className='logo1'>
-          <img src={Logo} alt="Logo" />
-        </div>
-        <map>
-          <img src={MapKG} alt="Map" />
-        </map>
-        <div className='logo2'>
-          <img src={Logo} alt="Logo"/>
-        </div>
-        <h1>
-          Карта
-        </h1>
-      </header>
-    </body>
+    <Div className="header" w="1199px" d="flex" flexDir={{xs:"column", sm:"row",md:'row'}} m="0 auto">
+      <Div w="32px" h="32px" m={{ t:"32px"}}>
+        <Image src={Logo}  />
+      </Div>
+    </Div>
   )
-
-
 }
 
